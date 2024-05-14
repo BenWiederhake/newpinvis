@@ -121,7 +121,7 @@ HTML_FOOTER = """
   <li>Perhaps the attacker has read this blog post, and randomly tries PINs with the same weighting as the above PIN generator. This is somewhat unlikely, but it's a good sanity check to see if the “secure” PIN generator accidentally makes things less secure. Let's call this approach <code>invreal</code>. (Spoiler: Yes, of course it is less secure than “uniform random” according to some metrics; however, it is more secure in other metrics. Deciding which ones to use is the the whole point of this subsection.)</li>
 </ul>
 
-<p>The following table compares the chances of success given each pairing of PIN generation and attacker. The variant <code>top1</code> always guesses <code>1111</code>, and <code>top10</code> always guesses the top ten most popular PINs, weighted according to real-life use. Note that PIN generator and attacker are interchangable, so pick your favorite interpretation of the axes:</p>
+<p>The following table compares the chances of success given each pairing of PIN generation and attacker. The variant <code>top1</code> always guesses <code>1111</code>, and <code>top10</code> always guesses the top ten most popular PINs, weighted according to real-life use. Note that PIN generator and attacker are interchangeable, so pick your favorite interpretation of the axes:</p>
 
 <table>
 MAGIC_COMPARISON_TABLE
