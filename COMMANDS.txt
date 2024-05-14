@@ -1,0 +1,15 @@
+1. Download: `./dl_all.py`
+    - Reads from the internet
+    - Writes to `target/E6EF2.range` etc and `target/table.json`
+2. Extract: `./extract_table.py`
+    - Reads from `target/E6EF2.range` etc `target/table.json`
+    - Writes to `target/list.json`
+3. Plot: `./plot.py`
+    - Reads from `target/list.json`
+    - Writes to `target/plot.png`
+4. Compute cross-correlations: `./stochastics.py`
+    - Reads from `target/list.json` (again!)
+    - Writes to `target/probabilities.json`
+5. Create HTML file: `./write_html.py`
+    - Reads from `target/list.json` (yet again!), `target/probabilities.json`
+    - Writes to `target/index.html`
