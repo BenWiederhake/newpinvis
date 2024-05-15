@@ -16,46 +16,6 @@
   <meta property="twitter:title" content="PIN analysis and visualization in HIBP" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebSite","description":"PIN analysis and visualization in HIBP","headline":"PIN analysis and visualization in HIBP","name":"BenWiederhake.github.io","url":"https://benwiederhake.github.io/newpinvis/"}</script>
-  <style>
-    .imagemap {  position: relative; width: 100%; }
-    .imagemap-map { display: block; width: 100%; }
-    .zmp,.zmq {
-      display: inline;
-      position: absolute;
-      width: calc(1% + 2px);
-      height: calc(1% + 2px);
-      margin: -1px;
-      line-height: 0px;
-    }
-    .zmp>svg,.zmq>svg {
-      width: 100%;
-      height: 100%;
-    }
-    .zmp:hover>div,.zmq:hover>div {
-      opacity: 1;
-      visibility: visible;
-    }
-    .zmp>div,.zmq>div {
-      display: flex;
-      height: 100%;
-      position: absolute;
-      top: 0px;
-      flex-direction: column;
-      justify-content: center;
-      visibility: hidden;
-      opacity: 0;
-      color: #eff;
-      z-index: 1;
-      white-space: nowrap;
-      pointer-events: none;
-    }
-    .zmp>div {
-      left: 115%;
-    }
-    .zmq>div {
-      right: 115%;
-    }
-  </style>
 </head>
 <body>
   <div id="container">
@@ -68,7 +28,7 @@
       <section id="main_content">
 <h2>Results</h2>
 
-<p>This page was last re-built on 2024-05-14 22:35:20 UTC.</p>
+<p>This page was last re-built on 2024-05-15 21:16:51 UTC.</p>
 
 <h3 id="gen-pin">Freshly generated, “secure” PINs</h3>
 
@@ -145,7 +105,7 @@
   <li>Perhaps the attacker has read this blog post, and randomly tries PINs with the same weighting as the above PIN generator. This is somewhat unlikely, but it's a good sanity check to see if the “secure” PIN generator accidentally makes things less secure. Let's call this approach <code>invreal</code>. (Spoiler: Yes, of course it is less secure than “uniform random” according to some metrics; however, it is more secure in other metrics. Deciding which ones to use is the the whole point of this subsection.)</li>
 </ul>
 
-<p>The following table compares the chances of success given each pairing of PIN generation and attacker. The variant <code>top1</code> always guesses <code>1111</code>, and <code>top10</code> always guesses the top ten most popular PINs, weighted according to real-life use. Note that PIN generator and attacker are interchangable, so pick your favorite interpretation of the axes:</p>
+<p>The following table compares the chances of success given each pairing of PIN generation and attacker. The variant <code>top1</code> always guesses <code>1111</code>, and <code>top10</code> always guesses the top ten most popular PINs, weighted according to real-life use. Note that PIN generator and attacker are interchangeable, so pick your favorite interpretation of the axes:</p>
 
 <table>
 <tr><td></td><th><code>real</code></th><th><code>top1</code></th><th><code>top3</code></th><th><code>top10</code></th><th><code>uni</code></th><th><code>invreal</code></th></tr>
