@@ -54,7 +54,7 @@ def download_all(prefixes):
     print(f"Started download at {dt_start}")
     for i, prefix in enumerate(prefixes):
         download_prefix(prefix)
-        if (i + 1) % 20 == 0:
+        if (i + 1) % 1000 == 0:
             completed_downloads = i + 1
             report_progress(dt_start, i + 1, len(prefixes))
     report_progress(dt_start, len(prefixes), len(prefixes))
