@@ -4,6 +4,8 @@ set -exo pipefail
 cd -P -- "$(dirname -- "$0")"
 script_path=$(pwd -P)
 
+. .venv/bin/activate
+
 STARTED=$(date)
 ./dl_all.py
 ./extract_table.py
